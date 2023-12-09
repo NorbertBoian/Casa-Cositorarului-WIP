@@ -1,0 +1,532 @@
+.rooms {
+  height: 100%;
+  font-size: calc(0.7rem + 1vw);
+  display: flex;
+  flex-direction: column;
+}
+
+.mainPhoto {
+  position: absolute;
+  aspect-ratio: 2;
+  min-height: 100%;
+  min-width: 100%;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.mainPhotoWrapper {
+  width: 100%;
+  height: 100%;
+  margin-inline: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.photos {
+  height: 100%;
+  background-color: #493a31;
+  aspect-ratio: 0.3;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 5px;
+}
+
+.photos li {
+  flex: 1;
+  overflow: hidden;
+}
+
+.photo {
+  margin-left: 50%;
+  translate: -50% 0;
+}
+
+.photo img {
+  object-fit: cover;
+}
+
+.photos li:last-child {
+  display: grid;
+  grid-template: 1fr/1fr;
+  align-items: center;
+}
+
+.photos li:last-child .photo {
+  grid-area: 1/1/2/2;
+}
+
+.viewMore {
+  grid-area: 1/1/2/2;
+  font-size: 1em;
+  line-height: 1.1em;
+  padding: 0.3em;
+  z-index: 1;
+  text-align: center;
+  color: #ffffff;
+  background-color: #493a31e0;
+}
+
+.container {
+  display: flex;
+  position: relative;
+  height: 70%;
+}
+
+.nightlyPriceText {
+}
+
+.breakfastPriceValue {
+  font-size: 1.2em;
+  margin-inline: 0.25em;
+  font-weight: 600;
+  line-height: 1em;
+}
+
+.nightlyPriceValue {
+  line-height: 1em;
+  font-size: 1.5em;
+  margin-inline: 0.25em;
+  font-weight: 600;
+}
+
+.nightlyPriceValueAndCurrency {
+  display: flex;
+  align-items: baseline;
+}
+
+.pricesContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.2em;
+  margin-top: 0.2em;
+}
+
+.breakfastPriceContainer {
+  padding: 0.1em 0.2em;
+  align-items: center;
+  display: flex;
+  background-color: #89786ee0;
+  font-size: 1.5em;
+  color: #ffffff;
+}
+.nightlyPriceContainer {
+  padding: 0.1em 0.2em;
+  display: flex;
+  background-color: #231811e0;
+  font-size: 1.5em;
+  color: #ffffff;
+  align-items: center;
+}
+.currency {
+  font-weight: 500;
+}
+
+.breakfastPriceText {
+}
+
+.breakfastPriceValueAndCurrency {
+  display: flex;
+  align-items: baseline;
+}
+.open360Button {
+  align-self: flex-start;
+  padding: 0.4em 0.4em;
+  color: #ffffff;
+  background-color: #231812e0;
+  margin-left: auto;
+  margin-top: 2%;
+  font-size: 1em;
+  line-height: 1em;
+  cursor: pointer;
+}
+
+.roomNameAndSquareMeters {
+  display: flex;
+  gap: 0.3em;
+  align-items: baseline;
+  line-height: 1.1em;
+  font-size: 1.5em;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  color: #f5f4ee;
+  text-shadow: 0px 3px 16px rgba(0, 0, 0, 0.15);
+  font-weight: 500;
+  width: 100%;
+  grid-area: 1/1/2/2;
+  justify-content: center;
+}
+
+.mainPhotoContainer {
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+
+.selectedRoomNameBig {
+  font-size: 2em;
+}
+
+.closeViewerButton {
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
+.viewer {
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border: 0;
+}
+
+.viewerContent {
+  width: 100%;
+  height: 100%;
+}
+
+.viewer:modal {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.viewer::backdrop {
+  height: 0;
+  width: 0;
+}
+
+.selected {
+  color: #c11a1a;
+  font-weight: 600;
+}
+
+.selected .peopleIcon {
+  background-color: #c11a1a;
+}
+
+.squareMeters {
+  font-size: 1em;
+  white-space: nowrap;
+}
+
+.bookNow {
+  grid-area: 1/1/2/2;
+  justify-self: end;
+  align-self: end;
+  margin-left: auto;
+  margin-right: 0.1em;
+  margin-bottom: 0.1em;
+  color: #231811;
+  font-size: 1.5em;
+  line-height: 1.1em;
+  padding: 0 0.7em;
+  background-color: #f8f3e5;
+}
+
+.guestsAndFacilities {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.roomFooter {
+  flex-grow: 1;
+  font-size: 1em;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.guests {
+  font-size: 1.3em;
+  display: flex;
+  margin-right: 1em;
+  gap: 0.2em;
+}
+.guestsValue {
+}
+.guestsText {
+}
+.roomFacilities {
+  display: flex;
+  gap: 1em;
+}
+.roomBeds {
+  font-size: 1.3em;
+  width: 100%;
+  text-align: center;
+}
+
+.peopleIcons {
+  display: flex;
+  gap: 0.05em;
+}
+
+.peopleIcon {
+  height: 0.8em;
+  aspect-ratio: 17/22;
+  margin-block: auto;
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  background-color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  mask-image: url("./assets/people.svg");
+}
+
+.roomsList {
+  display: flex;
+  gap: 3em;
+  justify-content: center;
+  font-size: 1em;
+  font-weight: 500;
+  padding-block: 1em 1.5em;
+}
+
+.roomName {
+  margin-right: 0.3em;
+  text-align: center;
+}
+
+.roomsList li {
+  display: flex;
+  align-items: baseline;
+  gap: 0.2em;
+  cursor: pointer;
+}
+
+.roomSquareMeters {
+  align-self: flex-start;
+  padding-left: 0.2em;
+  line-height: 1;
+}
+
+.roomSquareMeters {
+}
+
+.rightSide {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.pricesAndOpen360 {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.peopleIconsAndSquareMeters {
+  display: flex;
+}
+
+.open360AndBookNow {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.selectedRoomNameMobile {
+  display: none;
+}
+
+.morePhotos {
+  cursor: pointer;
+  display: none;
+}
+
+.roomNameAndBookNow {
+  display: flex;
+  flex-direction: column;
+}
+
+.guestsAndSquareMeters {
+  display: flex;
+  align-items: baseline;
+}
+
+.guestsAndSquareMeters :is(.squareMeters, .roomBeds) {
+  display: none;
+}
+
+@media (width <= 107rem) {
+  .roomNameAndSquareMeters {
+    grid-area: 2/1/3/2;
+    position: unset;
+  }
+}
+
+@media (width <= 56.25rem) {
+  .roomsList {
+    font-size: 1.6em;
+    padding-inline: 0;
+    padding-block: 0.2em 1em;
+    gap: 0;
+    justify-content: space-around;
+  }
+
+  .roomsList li {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.1em;
+  }
+
+  .roomName {
+    line-height: 1em;
+    font-size: 1.1em;
+  }
+
+  .peopleIcons .peopleIcon {
+    height: 0.6em;
+  }
+
+  .roomSquareMeters {
+    font-size: 0.8em;
+  }
+
+  .selectedRoomNameMobile {
+    line-height: 1em;
+  }
+
+  .peopleIconsAndSquareMeters {
+    order: -1;
+    gap: 0.5em;
+  }
+
+  .photos {
+    display: none;
+  }
+
+  .mainPhotoWrapper {
+    width: 95%;
+    height: 100%;
+    border-radius: 40px;
+  }
+
+  .container {
+    height: 55%;
+  }
+
+  .nightlyPriceContainer {
+    background-color: #212121f2;
+    border-radius: 10px;
+  }
+
+  .breakfastPriceContainer {
+    background: linear-gradient(269.43deg, #d8d0d4f2 9.62%, #d3ccd0f2 95.7%);
+    border-radius: 10px;
+    color: #202020;
+  }
+
+  .roomNameAndSquareMeters {
+    display: none;
+  }
+
+  .open360 {
+    color: #202020;
+    background: linear-gradient(269.43deg, #d8d8d0f2 9.62%, #d3d2ccf2 95.7%);
+    border-radius: 10px;
+  }
+
+  .bookNow {
+    color: #202020;
+    background: linear-gradient(269.43deg, #d8d8d0f2 9.62%, #d3d2ccf2 95.7%);
+    border-radius: 10px;
+  }
+
+  .selectedRoomNameMobile {
+    display: block;
+    font-size: 8.3vw;
+    text-align: center;
+    font-weight: 600;
+    margin-block: auto;
+  }
+
+  .morePhotos {
+    display: block;
+    color: #202020;
+    background: linear-gradient(269.43deg, #d8d8d0f2 9.62%, #d3d2ccf2 95.7%);
+    border-radius: 10px;
+    text-align: center;
+    padding: 0.4em 0.4em;
+    line-height: 1em;
+  }
+
+  .bookNow {
+    display: none;
+  }
+
+  .guestsAndSquareMeters {
+    gap: 1em;
+  }
+
+  .guestsAndSquareMeters :is(.squareMeters, .roomBeds) {
+    display: block;
+  }
+
+  .roomFooter > .roomBeds {
+    display: none;
+  }
+
+  .guestsAndFacilities {
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    justify-content: space-around;
+  }
+
+  .guests {
+    margin-right: 0;
+  }
+
+  .roomFooter {
+    font-size: 4.2vw;
+    justify-content: space-between;
+  }
+
+  .roomFacilities {
+    font-weight: 400;
+    font-size: 6vw;
+    text-align: center;
+    gap: 0;
+    height: 50%;
+    align-items: center;
+  }
+
+  .open360AndBookNow {
+    justify-content: end;
+    gap: 1em;
+    margin-bottom: 1em;
+    font-size: 1.4em;
+    font-weight: 500;
+    margin-right: 1%;
+  }
+
+  .pricesContainer {
+    margin-top: 1em;
+    margin-left: 1%;
+    gap: 1em;
+  }
+
+  .mainPhoto {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .line {
+    width: 100%;
+    background-color: black;
+    mask-image: url("./assets/line.svg");
+    aspect-ratio: 312/11;
+    mask-repeat: no-repeat;
+    mask-size: 100%;
+    margin-top: auto;
+  }
+}

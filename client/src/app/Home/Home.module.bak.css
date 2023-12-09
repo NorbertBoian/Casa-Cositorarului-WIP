@@ -1,0 +1,555 @@
+.main {
+  position: relative;
+  overflow: hidden;
+  flex: 1;
+  font-size: calc(0.7rem + 1vw);
+  font-weight: 350;
+  flex-direction: column;
+  display: flex;
+  min-height: 100%;
+  background-color: #fffcf4;
+}
+
+.bookingLogo,
+.tripadvisorLogo,
+.googleLogo {
+  filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(23deg)
+    brightness(101%) contrast(114%);
+  position: relative;
+  height: min(calc(1.5vh + 1.5em), 5vh);
+}
+
+.bookingLogo {
+  aspect-ratio: 3.5;
+}
+.tripadvisorLogo {
+  aspect-ratio: 3;
+}
+.googleLogo {
+  aspect-ratio: 2;
+}
+
+.headlineAndConcentric {
+}
+
+.floralPattern {
+  width: 100%;
+  height: 95%;
+  background-color: #46403d;
+  mask-position: 0 -1vh;
+  mask-size: 50vh;
+  position: absolute;
+}
+
+@media (width>43.75rem) {
+  .floralPattern {
+    mask-image: url("../[[...slug]]/assets/floralPattern2.avif");
+    -webkit-mask-image: url("../[[...slug]]/assets/floralPattern2.avif");
+  }
+}
+
+.reviewsListBar {
+  position: relative;
+  background: #5f5652;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1.5vh solid #231812;
+  height: 17%;
+  flex: 0 0 auto;
+  z-index: 3;
+}
+
+.reviewScore {
+  text-align: center;
+  color: white;
+  font-size: min(calc(0.6vh + 0.6em), 3vh);
+}
+
+.reviewsList {
+  align-items: center;
+  display: flex;
+  width: 70%;
+  justify-content: space-around;
+  position: relative;
+  z-index: 1;
+  filter: drop-shadow(0px 0px 41px #000000);
+}
+
+.reviewsList li {
+  padding-top: 2vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.restaurantHoursDetails {
+  display: flex;
+}
+.restaurantHoursWeekdaysAndHours {
+  display: flex;
+  gap: 1vw;
+  grid-area: 2/2/3/6;
+}
+
+.headline {
+  font-size: 1.4em;
+  line-height: 1.15em;
+  text-align: right;
+  margin-bottom: calc(0.75em + 2.5vh);
+}
+.checkIn {
+  grid-area: 4/2/5/3;
+}
+.checkOut {
+  grid-area: 4/4/5/5;
+}
+
+.highlightedFacilities {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  flex: 1 0;
+  padding-inline: calc(13rem - 6em);
+  margin-inline: auto;
+}
+
+.highlightedFacilities li:nth-last-child(-n + 3) {
+  margin-left: auto;
+}
+
+.highlightedFacilities li:nth-child(4) {
+  margin-bottom: 1em;
+}
+
+.highlightedFacilities li {
+  white-space: nowrap;
+}
+
+.directionsButtonContainer {
+  position: absolute;
+  right: 0;
+  top: 21vh;
+  background: url("../[[...slug]]/assets/dotsCircle.svg");
+  background-position: center left;
+  height: 8em;
+  background-size: 8em;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  width: 4.5em;
+  border: 0;
+  padding: 0;
+  z-index: 1;
+}
+
+.getDirections {
+  position: relative;
+  background-color: transparent;
+  z-index: 1;
+  text-align: end;
+  font-weight: normal;
+  font-size: 1.1em;
+  line-height: 1.1em;
+  padding-right: 0.1em;
+}
+
+.getDirections::after {
+  -webkit-text-stroke: 0.6em #fdfaf2;
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding-right: 0.1em;
+  z-index: -1;
+}
+
+.checkIn,
+.checkOut,
+.restaurantHoursContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.restaurantHoursHeadline {
+  grid-area: 1/2/2/5;
+}
+
+.main h4 {
+  font-size: 1.1em;
+}
+
+.hours {
+  display: grid;
+  grid-template: auto auto 1vw auto / auto 1fr 1vw 1fr auto;
+}
+
+.firstRow {
+  margin-inline: auto;
+}
+
+.scrollable {
+  height: 100%;
+  overflow: auto;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.grunge {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url("../[[...slug]]/assets/grunge.svg");
+  background-size: 50vh;
+  filter: invert(47%) sepia(12%) saturate(665%) hue-rotate(6deg) brightness(91%)
+    contrast(85%);
+  opacity: 0.1;
+  z-index: -1;
+}
+
+.paper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url("../[[...slug]]/assets/paper3.avif");
+  background-size: 30vh;
+  mix-blend-mode: multiply;
+  opacity: 0.1;
+}
+
+.skyContainer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.sky {
+  position: absolute;
+  aspect-ratio: 2692/1084;
+  font-size: calc(1vw + 1vh);
+  height: calc(480px + 3em);
+  bottom: -5vh;
+  right: min(0px, calc(-1500px + 75vw));
+}
+
+.sighisoara {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+  mix-blend-mode: luminosity;
+}
+
+.concentricWrapperContainer {
+  position: absolute;
+  height: 50vh;
+  width: 50vh;
+  left: -26vh;
+  bottom: -35vh;
+}
+
+.concentricWrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.concentric {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.mainContent {
+  z-index: 2;
+  margin-top: calc(1.7em + 0.7vh);
+  padding-left: 3rem;
+  width: 75%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  flex: 1;
+}
+
+.menuButton,
+.roomsButton,
+.keepScrollingContainer {
+  display: none;
+}
+
+.imageAndFacilities {
+}
+
+@media (width <= 84.375rem) {
+  .mainContent {
+    width: 95%;
+    width: calc(1000px - 17em);
+  }
+
+  .highlightedFacilities {
+    display: grid;
+    max-width: unset;
+    padding: 0;
+    grid-template: auto auto auto auto/auto auto;
+    width: calc(600px - 20%);
+    font-weight: normal;
+    margin-inline: unset;
+    margin-left: 3em;
+  }
+
+  .highlightedFacilities li:nth-last-child(-n + 3) {
+    margin-left: unset;
+  }
+
+  .highlightedFacilities li:nth-child(4) {
+    margin-bottom: unset;
+  }
+
+  .directionsButtonContainer {
+    position: relative;
+    top: unset;
+    right: unset;
+    background: unset;
+    height: unset;
+    display: block;
+    width: unset;
+    margin-left: 3em;
+  }
+
+  .getDirections {
+    text-align: unset;
+    font-weight: normal;
+    font-size: 1.1em;
+    line-height: 1.1em;
+    padding-right: unset;
+  }
+
+  .getDirections::after {
+    content: "";
+  }
+
+  .hours {
+    width: calc(600px - 20%);
+    margin-left: 3em;
+    grid-template-columns: 0px 1fr 0px 1fr 0px;
+  }
+
+  .firstRow {
+    margin-inline: unset;
+  }
+
+  .headline {
+    text-align: unset;
+    margin-left: 4.5em;
+    font-size: 1.7em;
+    margin-bottom: calc(0.6em + 2vh);
+    width: 70%;
+  }
+
+  .headline br {
+    display: none;
+  }
+
+  .concentricWrapperContainer {
+    height: 30vh;
+    width: 30vh;
+    left: -10vh;
+    top: 4vh;
+  }
+
+  .concentric {
+    rotate: 140deg;
+  }
+
+  .concentricWrapper::after {
+    content: "";
+    width: 14%;
+    height: 14%;
+    background-color: rgb(51, 110, 84);
+    position: absolute;
+    border-radius: 50%;
+    bottom: -5%;
+    left: 40%;
+    opacity: 0.7;
+  }
+
+  .sky {
+    height: calc(480px + 10em);
+    right: min(0px, calc(-1500px + 30vw));
+  }
+
+  .skyContainer {
+    background-color: #fffcf4;
+  }
+}
+
+@media (43.75rem < width <= 84.375rem) {
+  .skyContainer {
+    mask-image: url("../[[...slug]]/assets/mask2.svg");
+    -webkit-mask-image: url("../[[...slug]]/assets/mask2.svg");
+    mask-size: 100%;
+  }
+}
+
+@media (width <= 81.25rem) {
+  .floralPattern {
+    width: 100%;
+    height: 100%;
+    background: url("../[[...slug]]/assets/grunge.svg");
+    filter: unset;
+    background-size: 25vh;
+    background-position: unset;
+    opacity: 0.2;
+    position: absolute;
+  }
+
+  .reviewsListBar {
+    border-block: 1.2vh solid #b7a798;
+    background-color: #fcf7e9;
+  }
+
+  .bookingLogo,
+  .tripadvisorLogo,
+  .googleLogo {
+    filter: invert(9%) sepia(2%) saturate(4889%) hue-rotate(314deg)
+      brightness(100%) contrast(77%);
+  }
+
+  .reviewsList {
+    filter: unset;
+  }
+
+  .reviewScore {
+    color: #342e2d;
+  }
+}
+
+@media (width <= 78.125rem) {
+  .sky {
+    height: calc(480px + 10em);
+    right: min(0px, calc(-875px - 20vw));
+  }
+}
+
+@media (width <= 70.9375rem) {
+  .reviewsList {
+    width: 90%;
+  }
+}
+
+@media (width <= 53.125rem) {
+  .concentricWrapperContainer {
+    display: none;
+  }
+
+  .headline {
+    margin-left: 0;
+  }
+
+  .hours,
+  .highlightedFacilities,
+  .directionsButtonContainer {
+    margin: 0;
+  }
+
+  .hours,
+  .highlightedFacilities {
+    width: calc(40% + 20vw);
+  }
+}
+
+@media (width <= 46.875rem) {
+  .reviewScore {
+    font-weight: 500;
+  }
+}
+
+.restaurantHoursWeekdays {
+}
+
+.restaurantHoursHours {
+}
+
+@media (width< 43.75rem) {
+  .hours {
+    display: none;
+  }
+
+  .reviewsListBar {
+    height: 4.5em;
+    border-width: 0.45em;
+  }
+
+  .headline {
+    font-size: 1.9em;
+    width: 80%;
+    margin-bottom: 0;
+  }
+
+  .highlightedFacilities {
+    display: none;
+  }
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: flex-start;
+  }
+
+  .menuButton,
+  .roomsButton,
+  .keepScrollingContainer {
+    display: block;
+  }
+
+  .mainContent {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  .menuButton,
+  .roomsButton,
+  .getDirections {
+    font-size: 1.5em;
+    font-weight: 400;
+    display: inline-block;
+  }
+
+  .keepScrollingContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .purpleHaze {
+    background-color: purple;
+    position: absolute;
+    bottom: 0;
+    height: 30%;
+    width: 100%;
+    mix-blend-mode: soft-light;
+  }
+
+  .reviewsList li {
+    padding-top: 0;
+  }
+
+  .keepScrolling {
+    width: 30%;
+    font-size: 1.3em;
+    text-align: center;
+    background-color: #fcf9f1;
+  }
+
+  .sky {
+    right: min(0px, calc(-465px - 20vw));
+    height: calc(348px + 3em);
+    bottom: 0;
+  }
+
+  .sighisoara {
+    height: unset;
+    width: unset;
+    bottom: 0;
+  }
+}

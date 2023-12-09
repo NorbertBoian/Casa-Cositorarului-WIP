@@ -1,0 +1,67 @@
+.topBar,
+.simpleLogo,
+.logoWide,
+.phoneNumber {
+  display: none;
+}
+
+.languageMenuAndPhoneNumberContainer {
+}
+.languageMenu {
+}
+
+@media (56.25rem<width<=84.375rem) {
+  .phoneNumber {
+    display: block;
+  }
+
+  .languageMenuAndPhoneNumberContainer {
+    margin-left: auto;
+  }
+}
+
+@media (width>56.25rem) {
+  .topBar {
+    display: flex;
+    display: none;
+    height: 1.5em;
+    background-color: #f1ebeb;
+  }
+
+  .topBar .languageMenu {
+    display: none;
+  }
+}
+
+@media (width<=56.25rem) {
+  .topBar {
+    display: flex;
+    align-items: center;
+    font-size: calc(0.35vh + 0.35vw + 0.3rem);
+    flex: 0 0 auto;
+    height: 5em;
+    justify-content: space-between;
+    padding-inline: 0;
+    background-color: var(--color1);
+    position: relative;
+  }
+
+  .simpleLogo {
+    margin-inline: 15% auto;
+    display: block;
+    position: relative;
+    height: 100%;
+    aspect-ratio: 3;
+    display: block;
+    filter: invert(19%) sepia(3%) saturate(3366%) hue-rotate(314deg)
+      brightness(98%) contrast(96%);
+  }
+
+  .topBar .languageMenu {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "pages": {
+    "short": { "information": "Info" },
+    "regular": {
+      "home": "Home",
+      "menu": "Menu",
+      "rooms": "Rooms",
+      "information": "Information",
+      "contact": "Contact",
+      "photos": "Photos"
+    }
+  },
+  "menu": {
+    "quantity": "Quantity",
+    "alcohol": "Alcohol",
+    "time": "Time",
+    "or": "or",
+    "and": "and",
+    "frozen": "Frozen",
+    "vegan": "Vegan",
+    "vegetarian": "Vegetarian",
+    "legend": "Legend",
+    "allergens": "Allergens",
+    "search": "Search"
+  },
+  "rooms": {
+    "nightlyPrice": "Nightly price",
+    "breakfast": "Breakfast",
+    "open360View": "Open 360° View",
+    "360View": "360° View",
+    "morePhotos": "More photos",
+    "viewXMorePhotos": "View X more photos.",
+    "bookThisRoom": "Book this room",
+    "airConditioning": "Air Conditioning",
+    "freeWifi": "Free Wi-Fi",
+    "groundFloor": "Ground floor",
+    "ensuiteBathroom": "Ensuite bathroom",
+    "extraLargeDoubleBed": "Extra-large double bed",
+    "doubleBed": "Double bed",
+    "sofaBed": "Sofa bed",
+    "guests": "Guests",
+    "and": "and"
+  }
+}

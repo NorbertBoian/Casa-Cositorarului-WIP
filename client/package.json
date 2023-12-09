@@ -1,0 +1,42 @@
+{
+  "name": "client",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -H 192.168.1.11 -p 80",
+    "turbo": "next dev -H 192.168.1.11 -p 80 --turbo",
+    "build": "next build",
+    "start": "next start -H 192.168.1.11 -p 80",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "fast-xml-parser": "^4.3.2",
+    "flat-cache": "^3.2.0",
+    "framer-motion": "^10.16.15",
+    "marzipano": "^0.10.2",
+    "negotiator": "^0.6.3",
+    "next": "^14.0.3",
+    "nodemailer": "^6.9.7",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "server-only": "^0.0.1",
+    "sharp": "^0.33.0"
+  },
+  "devDependencies": {
+    "@lyrasearch/lyra": "^0.4.9",
+    "@lyrasearch/plugin-data-persistence": "^0.1.1",
+    "@sanity/client": "^6.9.1",
+    "@types/flat-cache": "^2.0.2",
+    "@types/gtag.js": "^0.0.18",
+    "@types/negotiator": "^0.6.3",
+    "@types/node": "20.10.4",
+    "@types/nodemailer": "^6.4.14",
+    "@types/react": "18.2.42",
+    "@types/react-dom": "18.2.17",
+    "eslint": "^8.55.0",
+    "eslint-config-next": "^14.0.3",
+    "eslint-config-prettier": "^9.1.0",
+    "typescript": "5.3.3",
+    "typescript-plugin-css-modules": "^5.0.2"
+  }
+}

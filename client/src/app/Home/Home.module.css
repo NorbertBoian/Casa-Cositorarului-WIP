@@ -1,0 +1,421 @@
+.main {
+}
+.checkIn {
+}
+.checkOut {
+}
+.mainContent {
+}
+.paper {
+}
+.highlightedFacilities {
+}
+.reviewsList {
+}
+.reviewsListBar {
+}
+.grunge {
+}
+.restaurantHoursWeekdaysAndHours {
+}
+.scrollable {
+}
+.reviewScore {
+}
+.hours {
+}
+.firstRow {
+}
+.getDirections {
+}
+.bookingLogo {
+}
+.tripadvisorLogo {
+}
+.googleLogo {
+}
+.restaurantHoursHeadline {
+}
+.buttons {
+}
+.menuButton {
+}
+.roomsButton {
+}
+.restaurantHoursWeekdays {
+}
+.restaurantHoursHours {
+}
+.headline {
+}
+.keepScrolling {
+}
+.headlineAndConcentric {
+}
+
+.bookingLogo,
+.tripadvisorLogo,
+.googleLogo {
+  filter: invert(26%) sepia(18%) saturate(754%) hue-rotate(348deg)
+    brightness(94%) contrast(91%);
+  position: relative;
+  height: min(calc(1.5vh + 1.5em), 5vh);
+}
+
+.bookingLogo {
+  aspect-ratio: 3.5;
+}
+.tripadvisorLogo {
+  aspect-ratio: 3;
+}
+.googleLogo {
+  aspect-ratio: 2;
+}
+.reviewsList {
+  align-items: center;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  position: relative;
+  z-index: 1;
+  align-self: center;
+  padding: 1.5vh;
+}
+
+.reviewsList {
+  font-weight: 600;
+  font-size: 1.5em;
+}
+.reviewScore {
+  text-align: center;
+  color: #be8286;
+  font-size: min(calc(0.6vh + 0.6em), 3vh);
+  line-height: 1em;
+}
+
+.headline {
+  width: 100%;
+  font-size: 1em;
+  font-weight: 700;
+  color: #300a0a;
+}
+
+.headline span {
+  font-size: 1.2em;
+}
+
+.mainThing {
+  position: relative;
+  height: 0;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.main {
+  position: relative;
+  overflow: hidden;
+  flex: 1;
+  font-size: calc(0.7rem + 1vw);
+  font-weight: 350;
+  flex-direction: column;
+  display: flex;
+  height: 100%;
+}
+
+.scrollable {
+  overflow: auto;
+  height: 100%;
+}
+
+.sighisoaraMobileContainer {
+  display: none;
+}
+
+.headlineOutline {
+  display: none;
+}
+
+@media (width>56.25rem) {
+  .bookingLogo,
+  .tripadvisorLogo,
+  .googleLogo {
+    height: min(calc(1.5vh + 1.5em), 5vh);
+  }
+
+  .reviewsList {
+    width: 70%;
+  }
+
+  .scrollable {
+    border-radius: 25px;
+    height: 98%;
+  }
+
+  .restaurantHoursWeekdaysAndHours,
+  .checkIn,
+  .checkOut {
+    font-weight: 500;
+    color: #6d6359;
+  }
+
+  .restaurantHoursHeadline,
+  .checkIn h4,
+  .checkOut h4 {
+    color: #381111;
+    font-weight: 700;
+    font-size: 1.2em;
+  }
+
+  .mainContent {
+    padding-left: 4vh;
+  }
+
+  .headlineAndLion {
+    width: 75%;
+    font-size: min(7vh, 2.2em);
+  }
+
+  .headline {
+  }
+
+  .lion {
+    position: relative;
+    height: 90%;
+    height: 2.5lh;
+    float: right;
+    aspect-ratio: 300/455;
+  }
+
+  .restaurantHoursWeekdaysAndHours {
+    display: flex;
+  }
+
+  .checkInCheckOut {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+  }
+
+  .texture {
+    background: url("../[[...slug]]/assets/texture.avif");
+    background-size: 17vh;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    mix-blend-mode: overlay;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    z-index: 2;
+  }
+
+  .triangle {
+    background-color: #e3e1d7;
+    height: 100%;
+    width: 100%;
+    mask-image: url("../[[...slug]]/assets/triangleMask.svg");
+    -webkit-mask-image: url("../[[...slug]]/assets/triangleMask.svg");
+    mask-size: auto 100vh;
+    mask-repeat: no-repeat;
+    mask-position: bottom right -3.2vh;
+    mask-position-x: right -3.2vh;
+    mask-position-y: bottom;
+  }
+
+  .triangleBorder {
+    grid-area: 1 / 1 / 2 / 2;
+    height: 100%;
+    width: 100%;
+    background-color: #d8c9bb;
+    mask-image: url("../[[...slug]]/assets/triangleMask.svg");
+    -webkit-mask-image: url("../[[...slug]]/assets/triangleMask.svg");
+    mask-size: auto 100vh;
+    mask-repeat: no-repeat;
+    mask-position: right;
+    position: absolute;
+    right: -19vh;
+  }
+
+  .triangleContainer {
+    user-select: none;
+    display: grid;
+    grid-template: 1fr / 1fr;
+    height: 100%;
+    float: right;
+    shape-outside: url("../[[...slug]]/assets/triangleMask.svg");
+    shape-outside: polygon(81.25% 0px, 100% 0px, 100% 100%, 5.3% 100%);
+    shape-margin: 3vh;
+    min-height: inherit;
+    overflow: hidden;
+  }
+
+  .imageAndFacilities {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    right: min(max(-705px + 23em, -3.6em), 0px);
+    height: 100%;
+    width: 100%;
+  }
+
+  .highlightedFacilities {
+    position: relative;
+    text-align: end;
+    margin-top: auto;
+    margin-bottom: 3vh;
+    margin-top: 51vh;
+    font-weight: 500;
+    color: #483132;
+  }
+
+  .highlightedFacilities li {
+    margin-block: 1.5vh;
+  }
+
+  .sighisoaraContainer {
+    grid-area: 1 / 1 / 2 / 2;
+    position: relative;
+    margin-left: auto;
+    margin-right: -4vh;
+    margin-top: auto;
+    margin-bottom: -2vh;
+    height: 90vh;
+    aspect-ratio: 1362 / 2100;
+    z-index: 1;
+    mask-size: auto 100vh;
+    mask-repeat: no-repeat;
+    mask-image: url("../[[...slug]]/assets/towerMask.svg");
+    -webkit-mask-image: url("../[[...slug]]/assets/towerMask.svg");
+  }
+
+  .mainContent {
+    z-index: 1;
+    flex: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .getDirections {
+    background-color: #bfa487;
+    color: #f6f4f1;
+    border-radius: 7px;
+    padding: 0.2em 1.5em;
+    font-weight: 500;
+    font-size: 1.3em;
+  }
+
+  .menuButton,
+  .roomsButton,
+  .keepScrolling {
+    display: none;
+  }
+}
+
+@media (width<=56.25rem) {
+  .scrollable,
+  .mainContent {
+    touch-action: pan-y;
+  }
+
+  .mainContent {
+    flex: 1;
+    gap: 3em;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow-x: hidden;
+  }
+
+  .headlineAndLion {
+    display: flex;
+    font-size: min(4.5vh, 1.5em);
+    padding-top: 1em;
+    position: relative;
+    margin-inline: 0.6em 0.3em;
+  }
+
+  .headline {
+    font-size: 1.2em;
+    position: relative;
+    line-height: 1.2;
+  }
+
+  .headlineOutline {
+    display: block;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    -webkit-text-stroke: 0.25em #faf7f5;
+  }
+
+  .imageAndFacilities,
+  .checkInCheckOut,
+  .restaurantHours {
+    display: none;
+  }
+
+  .lion {
+    order: 1;
+    z-index: -2;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    aspect-ratio: 300/455;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    font-family: var(--font-playfair-display);
+    width: 95%;
+    margin-inline: auto;
+    flex: 1;
+  }
+
+  .menuButton,
+  .roomsButton,
+  .getDirections {
+    color: #f6f4f1;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    font-size: 1.5em;
+    padding-left: 1em;
+    font-weight: 600;
+  }
+
+  .menuButton {
+    background-color: #42519d;
+  }
+  .roomsButton {
+    background-color: #9c8461;
+  }
+  .getDirections {
+    background-color: #9c6c6c;
+  }
+
+  .keepScrolling {
+    background-color: #e3ddd3;
+  }
+
+  .sighisoaraMobileContainer {
+    position: absolute;
+    height: 100%;
+    bottom: 0;
+    right: -1vh;
+    aspect-ratio: 1843/2316;
+  }
+
+  .bookingLogo,
+  .tripadvisorLogo,
+  .googleLogo {
+    height: min(calc(1vh + 1em), 3.5vh);
+  }
+}

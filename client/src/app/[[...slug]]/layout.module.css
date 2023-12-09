@@ -1,0 +1,38 @@
+.horizontalWrapper {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.verticalWrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  width: 0;
+}
+.sideNavigation {
+  height: 100%;
+  flex-grow: 0;
+  flex-shrink: 0;
+  z-index: 3;
+}
+
+.mainContent {
+  flex: 1;
+  height: 0;
+  width: 100%;
+  overflow: auto;
+  overflow-x: hidden;
+  touch-action: pan-y;
+}
+
+.mainContent section {
+  margin-bottom: 4vh;
+}
+
+@media (width>56.25rem) {
+  .verticalWrapper {
+    transform: unset !important;
+  }
+}

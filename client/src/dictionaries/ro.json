@@ -1,0 +1,44 @@
+{
+  "pages": {
+    "short": { "information": "Info" },
+    "regular": {
+      "home": "Acasa",
+      "menu": "Meniu",
+      "rooms": "Camere",
+      "information": "Informatii",
+      "contact": "Contact",
+      "photos": "Poze"
+    }
+  },
+  "menu": {
+    "quantity": "Cantitate",
+    "alcohol": "Alcool",
+    "time": "Timp",
+    "or": "sau",
+    "and": "si",
+    "frozen": "Congelat",
+    "vegan": "Vegan",
+    "vegetarian": "Vegetarian",
+    "legend": "Legenda",
+    "allergens": "Alergeni",
+    "search": "Cautare"
+  },
+  "rooms": {
+    "nightlyPrice": "Pret pe noapte",
+    "breakfast": "Mic dejun",
+    "open360View": "Deschide Vedere 360°",
+    "360View": "Vedere 360°",
+    "morePhotos": "Mai multe poze",
+    "viewXMorePhotos": "Vezi inca X poze.",
+    "bookThisRoom": "Rezerva camera",
+    "airConditioning": "Aer Conditionat",
+    "freeWifi": "Wi-Fi Gratuit",
+    "groundFloor": "Parter",
+    "ensuiteBathroom": "Baie in camera",
+    "extraLargeDoubleBed": "Pat dublu extra mare",
+    "doubleBed": "Pat dublu",
+    "sofaBed": "Canapea",
+    "guests": "Oaspeti",
+    "and": "si"
+  }
+}

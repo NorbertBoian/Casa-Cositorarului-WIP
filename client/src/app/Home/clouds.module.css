@@ -1,0 +1,323 @@
+@keyframes moveClouds {
+  0% {
+    translate: 0;
+  }
+  100% {
+    translate: 1000px 0;
+  }
+}
+
+@media (width< 43.75rem) {
+  .cloud {
+    display: none;
+  }
+}
+
+.cloud {
+  height: 50%;
+  aspect-ratio: 1988/1290;
+  position: absolute;
+  mix-blend-mode: lighten;
+  opacity: 0.7;
+  z-index: 1;
+  animation: moveClouds linear infinite;
+}
+
+.cloud:nth-child(1) {
+  left: -18vh;
+  top: 35vh;
+  opacity: 0.3;
+  animation-duration: 110s;
+}
+
+.cloud:nth-child(2) {
+  left: -73vh;
+  top: 18vh;
+  scale: 0.6;
+  opacity: 0.4;
+  animation-duration: 180s;
+}
+
+.cloud:nth-child(3) {
+  left: 89vh;
+  top: 26vh;
+  scale: 0.8;
+  opacity: 0.65;
+  animation-duration: 90s;
+}
+
+.cloud:nth-child(4) {
+  left: -23vh;
+  top: 6vh;
+  scale: 0.75;
+  opacity: 0.65;
+  animation-duration: 120s;
+}
+
+.cloud:nth-child(5) {
+  left: 28vh;
+  top: 29vh;
+  scale: 0.8;
+  opacity: 0.8;
+  animation-duration: 80s;
+}
+
+.cloud:nth-child(6) {
+  left: 29vh;
+  top: 41vh;
+  opacity: 0.4;
+  animation-duration: 35s;
+}
+
+.cloud:nth-child(7) {
+  left: -33vh;
+  top: 41vh;
+  scale: 0.6;
+  opacity: 0.6;
+  animation-duration: 40s;
+}
+
+.cloud:nth-child(8) {
+  left: -99vh;
+  top: 6vh;
+  scale: 0.8;
+  animation-duration: 105s;
+}
+
+.cloud:nth-child(9) {
+  left: 22vh;
+  top: 16vh;
+  scale: 0.75;
+  opacity: 0.65;
+  animation-duration: 55s;
+}
+
+.cloud:nth-child(10) {
+  left: -16vh;
+  top: 2vh;
+  scale: 0.8;
+  animation-duration: 80s;
+}
+
+.cloud:nth-child(11) {
+  left: 53vh;
+  top: 21vh;
+  scale: 1.2;
+  opacity: 0.55;
+  animation-duration: 35s;
+}
+
+.cloud:nth-child(12) {
+  left: 26vh;
+  top: 5vh;
+  animation-duration: 74s;
+}
+
+.cloud:nth-child(13) {
+  left: 10vh;
+  top: 30vh;
+  scale: 0.6;
+  opacity: 0.6;
+  animation-duration: 133s;
+}
+
+.cloud:nth-child(14) {
+  left: -12vh;
+  top: 40vh;
+  scale: 1.4;
+  opacity: 0.65;
+  animation-duration: 55s;
+}
+
+.cloud:nth-child(15) {
+  left: 8vh;
+  top: 31vh;
+  scale: 0.75;
+  opacity: 0.65;
+  animation-duration: 85s;
+}
+
+.cloud:nth-child(16) {
+  left: 32vh;
+  top: 12vh;
+  scale: 0.8;
+  animation-duration: 240s;
+}
+.cloud:nth-child(17) {
+  left: 15vh;
+  top: 24vh;
+  scale: 1.2;
+  opacity: 0.35;
+  animation-duration: 80s;
+}
+
+.cloud:nth-child(18) {
+  left: 4vh;
+  top: -5vh;
+  animation-duration: 44s;
+}
+
+.cloud:nth-child(19) {
+  left: 40vh;
+  top: 34vh;
+  scale: 0.6;
+  opacity: 0.2;
+  animation-duration: 253s;
+}
+
+.cloud:nth-child(20) {
+  left: -18vh;
+  top: 13vh;
+  scale: 1.4;
+  opacity: 0.65;
+  animation-duration: 45s;
+}
+.cloud:nth-child(21) {
+  left: -68vh;
+  top: 35vh;
+  opacity: 0.3;
+  animation-duration: 110s;
+}
+
+.cloud:nth-child(22) {
+  left: -133vh;
+  top: 18vh;
+  scale: 0.6;
+  opacity: 0.4;
+  animation-duration: 180s;
+}
+
+.cloud:nth-child(23) {
+  left: 29vh;
+  top: 26vh;
+  scale: 0.8;
+  opacity: 0.65;
+  animation-duration: 90s;
+}
+
+.cloud:nth-child(24) {
+  left: -83vh;
+  top: 6vh;
+  scale: 0.75;
+  opacity: 0.65;
+  animation-duration: 120s;
+}
+
+.cloud:nth-child(25) {
+  left: -38vh;
+  top: 29vh;
+  scale: 0.8;
+  opacity: 0.8;
+  animation-duration: 80s;
+}
+
+.cloud:nth-child(26) {
+  left: -29vh;
+  top: 41vh;
+  opacity: 0.4;
+  animation-duration: 35s;
+}
+
+.cloud:nth-child(27) {
+  left: -93vh;
+  top: 41vh;
+  scale: 0.6;
+  opacity: 0.6;
+  animation-duration: 40s;
+}
+
+.cloud:nth-child(28) {
+  left: -158vh;
+  top: 6vh;
+  scale: 0.8;
+  animation-duration: 105s;
+}
+
+.cloud:nth-child(29) {
+  left: -30vh;
+  top: 16vh;
+  scale: 0.75;
+  opacity: 0.65;
+  animation-duration: 55s;
+}
+
+.cloud:nth-child(30) {
+  left: -66vh;
+  top: 2vh;
+  scale: 0.8;
+  animation-duration: 80s;
+}
+
+.cloud:nth-child(31) {
+  left: -13vh;
+  top: 21vh;
+  scale: 1.2;
+  opacity: 0.55;
+  animation-duration: 35s;
+}
+
+.cloud:nth-child(32) {
+  left: -36vh;
+  top: 5vh;
+  animation-duration: 74s;
+}
+
+.cloud:nth-child(33) {
+  left: -50vh;
+  top: 30vh;
+  scale: 0.6;
+  opacity: 0.6;
+  animation-duration: 133s;
+}
+
+.cloud:nth-child(34) {
+  left: -62vh;
+  top: 40vh;
+  scale: 1.4;
+  opacity: 0.65;
+  animation-duration: 55s;
+}
+
+.cloud:nth-child(35) {
+  left: -39vh;
+  top: 31vh;
+  scale: 0.75;
+  opacity: 0.65;
+  animation-duration: 85s;
+}
+
+.cloud:nth-child(36) {
+  left: -28vh;
+  top: 12vh;
+  scale: 0.8;
+  animation-duration: 240s;
+}
+.cloud:nth-child(37) {
+  left: -35vh;
+  top: 24vh;
+  scale: 1.2;
+  opacity: 0.35;
+  animation-duration: 80s;
+}
+
+.cloud:nth-child(38) {
+  left: -50vh;
+  top: -5vh;
+  animation-duration: 44s;
+}
+
+.cloud:nth-child(39) {
+  left: -10vh;
+  top: 34vh;
+  scale: 0.6;
+  opacity: 0.2;
+  animation-duration: 253s;
+}
+
+.cloud:nth-child(40) {
+  left: -70vh;
+  top: 13vh;
+  scale: 1.4;
+  opacity: 0.65;
+  animation-duration: 45s;
+}

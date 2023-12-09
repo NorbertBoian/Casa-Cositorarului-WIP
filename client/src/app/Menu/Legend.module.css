@@ -1,0 +1,97 @@
+.legendIcon {
+  width: 0.65em;
+  height: 0.65em;
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  background-color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.legendIconParent {
+  padding-right: 0.4em;
+  width: 1.4em;
+  display: flex;
+  align-items: center;
+}
+
+.legendIcon div {
+  height: calc(100% - 2px);
+  aspect-ratio: 1/1;
+  margin-block: auto;
+  mask-image: inherit;
+  mask-repeat: no-repeat;
+  mask-size: contain;
+}
+
+.legend {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.dialogContent {
+  font-size: 1.8em;
+  padding: 1em 2em;
+  line-height: 1.4em;
+}
+
+.legend li {
+  display: flex;
+  align-items: baseline;
+}
+
+.legend :where(h1) {
+  font-size: 1.1em;
+  font-weight: 700;
+  line-height: 1.5em;
+}
+
+.allergenList {
+}
+
+.allergensTitle {
+  margin-top: 1.5em;
+  margin-top: 0.5em;
+  text-align: center;
+  margin-bottom: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+.legendTitle {
+  text-align: center;
+  margin-bottom: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+@media (width <= 103.125em) {
+  .allergenList,
+  .misc {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+    grid-template-columns: repeat(auto-fit, 7em);
+    justify-content: center;
+  }
+
+  .dialogContent {
+    width: 20em;
+  }
+
+  .legend {
+    display: flex;
+  }
+
+}
+
+@media (width <= 56.25rem) {
+
+  .dialogContent {
+    width: 9em;
+  }
+
+  .legend {
+    padding: 0.5em 1em;
+  }
+}

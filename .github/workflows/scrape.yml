@@ -1,0 +1,14 @@
+name: Scrape guesthouse and parking info
+on:
+  schedule:
+    - cron: '0 */5 * * *'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Scraping data
+      run: |
+        curl -X GET https://casa-cositorarului.vercel.app/api/getParkingInfo
+        curl -X GET https://casa-cositorarului.vercel.app/api/crawlRoomPrices

@@ -1,0 +1,83 @@
+.contact {
+  font-size: 1.5em;
+  padding-inline: 2em;
+}
+
+.horizontalContainer {
+  display: flex;
+  gap: 1rem;
+}
+
+.contact form {
+  max-width: 40em;
+}
+
+.headline {
+  font-size: 2.25em;
+  font-weight: 500;
+}
+
+.labels {
+  font-size: 1.25em;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.labels > label,
+.inputs > * {
+  height: 3rem;
+}
+
+.inputs {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.inputs textarea {
+  height: 8em;
+  width: 100%;
+}
+
+.nameAndForename {
+  display: grid;
+  grid-template: 1fr / 1fr;
+}
+
+.forename {
+  grid-area: 1/1/2/2;
+  display: grid;
+  grid-template: 1fr / 1fr;
+}
+
+.forename :is(label, input) {
+  grid-area: 1/1/2/2;
+}
+
+.name {
+  grid-area: 1/1/2/2;
+}
+
+.contactFooter {
+  margin-top: 1em;
+}
+
+.contactFooter button {
+  float: right;
+  margin-left: 0.3em;
+}
+
+.recaptchaDisclaimer {
+  font-size: 0.7em;
+}
+
+.recaptchaDisclaimer a {
+  margin-inline: 0.3em;
+}
+
+.inputs input {
+  width: 100%;
+}

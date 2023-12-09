@@ -1,0 +1,67 @@
+.languageMenuContainer {
+  display: flex;
+  height: 100%;
+  justify-content: flex-end;
+  border-radius: 0 0 5px 5px;
+  overflow: hidden;
+}
+
+.languageOptions {
+  display: flex;
+}
+
+.languageOption {
+  border: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #bca7a8;
+  color: #efe9de;
+  text-decoration: none;
+  padding-block: 0.2vh;
+  text-align: center;
+  font-size: 2em;
+  padding-inline: 1em;
+  flex: 1;
+  cursor: pointer;
+}
+
+.selectedLanguage {
+  cursor: unset;
+  background-color: #b7844d;
+  color: #efe9de;
+}
+
+@media (width<=56.25rem) {
+  .selectedLanguage {
+    flex: 1;
+    max-width: 30%;
+    z-index: 1;
+  }
+
+  .languageOptions {
+    width: 0px;
+  }
+
+  .visibleLanguageOptions {
+    width: unset;
+  }
+}
+
+@media (width>56.25rem) {
+  .languageOptions {
+    flex: 1;
+  }
+}
+
+@media (56.25rem<width<84.375rem) {
+  .languageOption {
+  }
+}
+
+@media (width>=84.375rem) {
+  .languageOption {
+    padding-inline: 0;
+  }
+}

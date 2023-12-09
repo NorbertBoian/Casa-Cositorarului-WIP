@@ -1,0 +1,487 @@
+.contact {
+}
+.home {
+}
+.info {
+}
+.menu {
+}
+.photos {
+}
+.rooms {
+}
+.iconContainer {
+}
+.sideNavigation {
+}
+.languageMenu {
+}
+.pageName {
+}
+.logoNarrow {
+}
+.logoMediumWidth {
+}
+.social {
+}
+.navPattern {
+}
+.texture {
+}
+.decoration {
+}
+.pageButton {
+}
+.pageButtons {
+}
+.toggleDrawerButton {
+}
+.instagramIcon {
+}
+.facebookIcon {
+}
+.pageButtonsContainer {
+}
+.verticalBarsIconContainer {
+}
+.link {
+}
+.triangleIconContainer {
+}
+.background {
+}
+.selected {
+}
+.pageButtonBackground {
+}
+.selectedPageButton {
+}
+.bookNow {
+}
+.pageNameContainer {
+}
+.phoneNumber {
+}
+.contact {
+}
+.home {
+}
+.info {
+}
+.menu {
+}
+.photos {
+}
+.rooms {
+}
+.bookNowAndPhoneNumberContainer {
+}
+
+.sideNavigation {
+  font-size: calc(0.7vh + 0.3rem);
+  height: 100%;
+  position: relative;
+  user-select: none;
+  flex: 0 0 auto;
+}
+
+.pageButtonsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -3;
+  background-color: var(--color1);
+}
+
+.iconContainer,
+.dragRightIconContainer,
+.decoration,
+.logoNarrow,
+.logoMediumWidth,
+.instagramIcon,
+.facebookIcon {
+  user-select: none;
+}
+
+.pageNameContainer,
+.iconContainer,
+.social,
+.languageMenu,
+.logoMediumWidth,
+.logoNarrow,
+.toggleDrawerButton,
+.bookNow,
+.phoneNumber {
+  display: none;
+}
+
+.decoration {
+  background-color: #ab8d71;
+  mask-image: url("./assets/decoration.svg");
+  -webkit-mask-image: url("./assets/decoration.svg");
+  width: 100%;
+  margin-block: 1vh;
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.pageName::after {
+  content: attr(data-regular-name);
+}
+
+.navPattern {
+  position: absolute;
+  background: url("./assets/navPattern.svg");
+  mix-blend-mode: color-burn;
+  background-size: 35vh;
+  height: 100%;
+  width: 100%;
+  filter: invert(55%) sepia(82%) saturate(189%) hue-rotate(170deg)
+    brightness(87%) contrast(87%)
+    drop-shadow(0px 4px 4px rgba(255, 214, 0, 0.25));
+  z-index: -1;
+}
+
+.texture {
+  background: url("../[[...slug]]/assets/texture.avif");
+  background-size: 17vh;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  mix-blend-mode: overlay;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+}
+
+@media (width<=56.25rem) {
+  .sideNavigation {
+    justify-content: space-around;
+    touch-action: none;
+    filter: drop-shadow(0.1vh 0 0.2vh rgba(0, 0, 0, 0.2));
+    overflow: hidden;
+  }
+
+  .pageButton {
+    width: 100%;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    height: 7vh;
+    display: grid;
+    grid-template: 1fr/1fr;
+  }
+
+  .decoration {
+    height: 7vh;
+  }
+
+  .iconContainer {
+    display: block;
+    width: 2vh;
+    margin-inline: 0.5vh 2vh;
+    user-select: none;
+  }
+
+  .toggleDrawerButton {
+    display: block;
+    position: absolute;
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+    top: 5vh;
+    z-index: 1;
+  }
+
+  .pageButtonsContainer {
+    justify-content: space-around;
+  }
+
+  .pageButtons {
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    justify-content: space-around;
+    margin-bottom: 4vh;
+    font-size: 2.5em;
+  }
+
+  .iconContainer,
+  .pageNameContainer,
+  .selectedPageButton,
+  .pageButtonBackground {
+    grid-area: 1/1/2/2;
+  }
+
+  .pageName {
+    mix-blend-mode: difference;
+    color: var(--color1);
+  }
+
+  .pageNameContainer {
+    display: flex;
+    justify-content: center;
+  }
+
+  .toggleDrawerButton {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 8%;
+    width: 3vh;
+  }
+
+  .triangleIconContainer {
+    width: 0.9vh;
+    height: auto;
+  }
+
+  .verticalBarsIconContainer {
+    width: 1.6vh;
+    height: auto;
+  }
+
+  .selectedPageButton {
+    border-radius: 25px;
+    width: 95%;
+    height: 80%;
+    justify-self: center;
+    background-color: #940a10;
+  }
+
+
+  .selected .iconContainer {
+    filter: invert(100%) sepia(80%) saturate(353%) hue-rotate(296deg)
+      brightness(104%) contrast(91%);
+  }
+
+  .pageButtonBackground {
+    width: 100%;
+    height: 100%;
+    background-color: #e4dbd2;
+  }
+
+  .selected .pageButtonBackground {
+    background-color: #a87d4d;
+  }
+}
+
+/*!important is used to override inline styles*/
+
+@media (width>56.25rem) {
+  .texture {
+    opacity: 1 !important;
+    transform: unset !important;
+  }
+
+  .navPattern {
+    opacity: 0.22 !important;
+  }
+
+  .sideNavigation {
+    transform: unset !important;
+  }
+
+  .pageButtonsContainer,
+  .texture {
+    transform: unset !important;
+    width: 100% !important;
+  }
+
+  .background {
+    background-color: var(--color1) !important;
+  }
+
+  .decoration {
+    transform: unset !important;
+    opacity: unset !important;
+  }
+
+  .pageButtonBackground {
+    opacity: unset !important;
+    mask-image: unset !important;
+    -webkit-mask-image: unset !important;
+  }
+
+  .pageName {
+    transform: unset !important;
+    mask-image: unset !important;
+    -webkit-mask-image: unset !important;
+  }
+
+  .pageNameContainer,
+  .bookNow {
+    display: block;
+    text-transform: uppercase;
+  }
+
+  .social {
+    position: absolute;
+    right: 0;
+    bottom: 0.5vh;
+    height: 3vh;
+    display: flex;
+  }
+
+  .social > a {
+    height: 100%;
+    aspect-ratio: 1;
+    position: relative;
+  }
+  .pageName {
+    color: #3a3837;
+    font-weight: 500;
+  }
+
+  .selected .pageName {
+    color: #ab7174;
+    font-weight: 700;
+    font-size: 1.1em;
+  }
+
+  .bookNow {
+    color: #990b11;
+    font-size: min(2.5em, 3.5vh);
+    font-weight: 900;
+  }
+
+  .languageMenu {
+    z-index: 3;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: -95%;
+    width: 190%;
+  }
+}
+
+@media (width<84.375rem) {
+  .pageName::after {
+    content: attr(data-short-name);
+  }
+}
+
+@media (56.25rem<width<84.375rem) {
+  .logoNarrow {
+    display: block;
+  }
+
+  .sideNavigation {
+    width: 12vh !important;
+    padding-block: 10vh 5vh;
+  }
+
+  .decoration {
+    height: 3vh;
+    margin-block: 3vh;
+  }
+
+  .pageButtons {
+    font-size: min(2.5em, 4vh);
+    height: 50%;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    line-height: 1em;
+    padding-left: 0.2em;
+  }
+
+  .bookNow {
+    font-size: min(2.5em, 4.5vh);
+    margin-top: 2vh;
+    line-height: 1em;
+    padding-block: 0.2vh 1vh;
+    text-align: center;
+    margin-block: 3vh 0;
+  }
+
+  .logoNarrow {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1;
+  }
+
+  .social {
+    width: 100%;
+    justify-content: space-around;
+  }
+}
+
+@media (width>=84.375rem) {
+  .sideNavigation {
+    width: 35vh !important;
+  }
+
+  .pageNameContainer,
+  .decoration,
+  .logoMediumWidth {
+    display: block;
+  }
+
+  .sideNavigation {
+    padding-block: 6vh;
+  }
+
+  .pageButtons {
+    display: flex;
+    flex-direction: column;
+    font-size: min(4em, 5vh);
+    padding-left: 11%;
+  }
+
+  .pageButtonsContainer {
+    justify-content: space-around;
+  }
+
+  .decoration {
+    height: 4.5vh;
+  }
+
+  .languageMenu {
+    right: -30%;
+    width: 60%;
+  }
+
+  .bookNow {
+    font-size: min(3.5em, 4.5vh);
+    line-height: 1em;
+    text-align: center;
+    margin-block: 3vh 0;
+    font-weight: 900;
+  }
+
+  .phoneNumber {
+    display: block;
+    color: #754442;
+    font-size: min(3em, 4vh);
+    text-align: center;
+    font-weight: 400;
+  }
+
+  .logoMediumWidth {
+    width: 28vh;
+    height: auto;
+    position: relative;
+    align-self: center;
+  }
+
+  .social > a {
+    margin-right: 0.5vh;
+  }
+}

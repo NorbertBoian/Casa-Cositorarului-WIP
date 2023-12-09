@@ -1,0 +1,111 @@
+.milk {
+  mask-image: url("../[[...slug]]/assets/shapes/diamond.svg");
+}
+
+.milk div {
+  background-color: #ffffff;
+}
+
+.eggs {
+  mask-image: url("../[[...slug]]/assets/shapes/disc.svg");
+}
+
+.eggs div {
+  background-color: #fffac8;
+}
+
+.nuts {
+  mask-image: url("../[[...slug]]/assets/shapes/arrow.svg");
+}
+
+.nuts div {
+  background-color: #e6194b;
+}
+
+.gluten {
+  mask-image: url("../[[...slug]]/assets/shapes/triangle.svg");
+}
+
+.gluten div {
+  background-color: #ffe119;
+}
+
+.peanuts {
+  mask-image: url("../[[...slug]]/assets/shapes/crescent.svg");
+}
+
+.peanuts div {
+  background-color: #9a6324;
+}
+
+.crustaceans {
+  mask-image: url("../[[...slug]]/assets/shapes/cross.svg");
+}
+
+.crustaceans div {
+  background-color: #f58231;
+}
+
+.molluscs {
+  mask-image: url("../[[...slug]]/assets/shapes/star.svg");
+}
+
+.molluscs div {
+  background-color: #fabed4;
+}
+
+.lupin {
+  mask-image: url("../[[...slug]]/assets/shapes/funky.svg");
+}
+
+.lupin div {
+  background-color: #dcbeff;
+}
+
+.mustard {
+  mask-image: url("../[[...slug]]/assets/shapes/heart.svg");
+}
+
+.mustard div {
+  background-color: #f032e6;
+}
+
+.fish {
+  mask-image: url("../[[...slug]]/assets/shapes/pentagon.svg");
+}
+
+.fish div {
+  background-color: #42d4f4;
+}
+
+.sesame {
+  mask-image: url("../[[...slug]]/assets/shapes/ring.svg");
+}
+
+.sesame div {
+  background-color: #4363d8;
+}
+
+.soy {
+  mask-image: url("../[[...slug]]/assets/shapes/semicircle.svg");
+}
+
+.soy div {
+  background-color: #469990;
+}
+
+.celery {
+  mask-image: url("../[[...slug]]/assets/shapes/square.svg");
+}
+
+.celery div {
+  background-color: #3cb44b;
+}
+
+.sulphur {
+  mask-image: url("../[[...slug]]/assets/shapes/club.svg");
+}
+
+.sulphur div {
+  background-color: #aaffc3;
+}
